@@ -1,0 +1,26 @@
+{
+  "name": "@rbxts/ControllerCursor",
+  "version": "1.0.0",
+  "description": "A port of MrAsync's Controller Cursor module.",
+  "main": "out/init.lua",
+  "scripts": {
+    "prepublishOnly": "rbxtsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanzLua/ControllerCursorTS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "out/index.d.ts",
+  "devDependencies": {
+    "@rbxts/types": "^1.0.350"
+  },
+  "dependencies": {
+    "@rbxts/services": "^1.0.4"
+  }
+}
