@@ -3,12 +3,12 @@ A port of MrAsync's Controller Cursor module.
 
 ## Installation:
 ```
-npm i @rbxts/ControllerCursor
+npm i @rbxts/controller-cursor
 ```
 
 ## Example Usage
 ```TS
-import { ShowCursor, HideCursor } from "@rbxts/ControllerCursor";
+import { ShowCursor, HideCursor } from "@rbxts/controller-cursor";
 
 ShowCursor();
 wait(5);

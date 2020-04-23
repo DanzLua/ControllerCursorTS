@@ -1,5 +1,5 @@
 {
-  "name": "@rbxts/ControllerCursor",
+  "name": "@rbxts/controller-cursor",
   "version": "1.0.0",
   "description": "A port of MrAsync's Controller Cursor module.",
   "main": "out/init.lua",
