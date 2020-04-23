@@ -7,14 +7,14 @@ interface PlayerControlInterface{
 
 //	//CONFIG\\
 
-const CREATE_GUI: boolean = true;								//	Auto creates GUI if set to true, if false, you must change the CursorGui and Cursor variables
-const CURSOR_ICON: string = "rbxassetid://4883624920";
-const CURSOR_SIZE: UDim2 = new UDim2(0, 15, 0, 15);
-const SENSITIVIY: number = 10;
-const THUMBSTICK_DEADZONE: number = 0.5;
-const THUMBSTICK_KEY: Enum.KeyCode = Enum.KeyCode.Thumbstick1;
-const ACTIVATION_KEY: Enum.KeyCode = Enum.KeyCode.ButtonSelect;
-const DEFAULT_GAMEPAD: Enum.UserInputType = Enum.UserInputType.Gamepad1;
+const CREATE_GUI = true;								//	Auto creates GUI if set to true, if false, you must change the CursorGui and Cursor variables
+const CURSOR_ICON = "rbxassetid://4883624920";
+const CURSOR_SIZE = new UDim2(0, 15, 0, 15);
+const SENSITIVIY = 10;
+const THUMBSTICK_DEADZONE = 0.5;
+const THUMBSTICK_KEY = Enum.KeyCode.Thumbstick1;
+const ACTIVATION_KEY = Enum.KeyCode.ButtonSelect;
+const DEFAULT_GAMEPAD = Enum.UserInputType.Gamepad1;
 
 // VALID_SELECTION_TYPES DECLARATION
 const VALID_SELECTION_TYPES: Map<string, boolean> = new Map()
@@ -46,11 +46,11 @@ export const GuiObjectSelectionStarted: RBXScriptSignal<() => void, true> = Even
 export const GuiObjectSelectionEnded: RBXScriptSignal<() => void, true> = Events.GuiObjectSelectionEnded.Event;
 
 //Player
-const Player: Player = Players.LocalPlayer;
+const Player = Players.LocalPlayer;
 
 //Services / Top Level
-const PlayerScripts: PlayerScripts = Player.WaitForChild("PlayerScripts") as PlayerScripts;
-const PlayerGui: PlayerGui = Player.WaitForChild("PlayerGui") as PlayerGui;
+const PlayerScripts = Player.WaitForChild("PlayerScripts") as PlayerScripts;
+const PlayerGui = Player.WaitForChild("PlayerGui") as PlayerGui;
 
 //Locals
 let CursorGui: ScreenGui|undefined;
@@ -58,9 +58,9 @@ let Cursor: ImageLabel|undefined;
 
 const states: Map<Enum.KeyCode, InputObject> = new Map()
 
-let isInCursorMode: boolean = false;
-let currentPosition: UDim2 = new UDim2(0, 0, 0, 0);
-let currentMoveDirection: Vector2 = new Vector2(0, 0);
+let isInCursorMode = false;
+let currentPosition = new UDim2(0, 0, 0, 0);
+let currentMoveDirection = new Vector2(0, 0);
 
 
 
